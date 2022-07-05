@@ -11,7 +11,7 @@ package com.mov.leetcode
  * ## 思路:
  *
  * ## 成绩:
- * - 执行用时： ms, 在所有 Kotlin 提交中击败了%的用户
- * - 内存消耗： MB, 在所有 Kotlin 提交中击败了%的用户
+ * - 执行用时：ms, 在所有 Kotlin 提交中击败了%的用户
+ * - 内存消耗：MB, 在所有 Kotlin 提交中击败了%的用户
  *
  */
