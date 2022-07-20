@@ -1,6 +1,4 @@
-package com.mov.leetcode.binary_search
-
-import com.mov.leetcode.array.ListNode
+package com.mov.leetcode.array
 
 /**
  * ### Author: 付鑫博
@@ -57,18 +55,18 @@ import com.mov.leetcode.array.ListNode
  */
 
 class Solution160 {
-    fun getIntersectionNode(headA: ListNode?, headB:ListNode?):ListNode? {
+    fun getIntersectionNode(headA: ListNode?, headB: ListNode?): ListNode? {
         if (headA == null || headB == null) return null
         var hA = headA
         var hB = headB
-        while (hA != hB){
+        while (hA != hB) {
             hA = if (hA == null) headB else hA.next
             hB = if (hB == null) headA else hB.next
         }
         return hA
     }
-}
 
-class ListNode(var `val`: Int) {
-    var next: ListNode? = null
+    class ListNode(var `val`: Int) {
+        var next: ListNode? = null
+    }
 }
