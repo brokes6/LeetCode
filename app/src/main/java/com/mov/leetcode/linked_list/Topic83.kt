@@ -30,19 +30,6 @@ package com.mov.leetcode.linked_list
  * - 内存消耗：34.5 MB, 在所有 Kotlin 提交中击败了91.23%的用户
  *
  */
-
-fun main() {
-    println(Solution83().deleteDuplicates(ListNode(1).apply {
-        next = ListNode(1).apply {
-            next = ListNode(2).apply {
-                next = ListNode(3).apply {
-                    next = ListNode(3)
-                }
-            }
-        }
-    }))
-}
-
 class Solution83 {
     fun deleteDuplicates(head: ListNode?): ListNode? {
         if (head == null) return head

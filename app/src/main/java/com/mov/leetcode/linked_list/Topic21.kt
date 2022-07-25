@@ -35,19 +35,6 @@ package com.mov.leetcode.linked_list
  * - 内存消耗：34.3 MB, 在所有 Kotlin 提交中击败了68.51%的用户
  *
  */
-
-fun main() {
-    println(Solution21().mergeTwoLists(ListNode(1).apply {
-        next = ListNode(2).apply {
-            next = ListNode(4)
-        }
-    }, ListNode(1).apply {
-        next = ListNode(3).apply {
-            next = ListNode(4)
-        }
-    }))
-}
-
 class Solution21 {
     fun mergeTwoLists(list1: ListNode?, list2: ListNode?): ListNode? {
         if (list1 == null) return list2
