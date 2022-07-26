@@ -1,7 +1,7 @@
 package com.mov.leetcode
 
 /**
- * ### Author: 付鑫博
+ * ### Author: fuxinbo
  * ### Date: 2022/6/24
  * ### Modify: 简单
  * ### Description: 模板
