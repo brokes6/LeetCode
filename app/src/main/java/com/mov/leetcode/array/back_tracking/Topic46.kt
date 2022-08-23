@@ -1,4 +1,4 @@
-package com.mov.leetcode.array
+package com.mov.leetcode.array.back_tracking
 
 import java.util.*
 
