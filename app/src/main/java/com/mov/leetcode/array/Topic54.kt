@@ -18,7 +18,7 @@ package com.mov.leetcode.array
  * 输出：[1,2,3,4,8,12,11,10,9,5,6,7]
  * ```
  * ## 思路:
- *
+ * 就纯纯的模拟法，没啥好说的，一条边一条边的模拟
  * ## 成绩:
  * - 执行用时：140ms, 在所有 Kotlin 提交中击败了90.74%的用户
  * - 内存消耗：33.2MB, 在所有 Kotlin 提交中击败了33.33%的用户
@@ -48,24 +48,28 @@ class Solution54 {
         val n = (matrix.size * matrix[0].size)
         if (matrix.isEmpty()) return arrayListOf()
         while (true) {
+            // 模拟上边
             for (i in x..y) {
                 result.add(matrix[t][i])
                 index++
             }
             if (index == n) return result
             t++
+            // 模拟右边
             for (i in t..b) {
                 result.add(matrix[i][y])
                 index++
             }
             if (index == n) return result
             y--
+            // 模拟下边
             for (i in y downTo x) {
                 result.add(matrix[b][i])
                 index++
             }
             if (index == n) return result
             b--
+            // 模拟左边
             for (i in b downTo t) {
                 result.add(matrix[i][x])
                 index++

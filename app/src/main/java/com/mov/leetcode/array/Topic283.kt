@@ -1,7 +1,5 @@
 package com.mov.leetcode.array
 
-import java.util.Collections.swap
-
 /**
  * ### Author: fuxinbo
  * ### Date: 2022/9/7
